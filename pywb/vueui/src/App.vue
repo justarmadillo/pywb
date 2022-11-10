@@ -142,8 +142,8 @@
     </div>
 
     <!-- Calendar -->
-    <div class="card border-0" v-if="currentPeriod && showFullView && currentPeriod.children.length">
-      <div class="card-body">
+    <div class="card" v-if="currentPeriod && showFullView && currentPeriod.children.length">
+      <div class="card-body" id="calendar-card-body">
         <CalendarYear
           :period="currentPeriod"
           :current-snapshot="currentSnapshot"
@@ -452,6 +452,9 @@ export default {
     width: 100%;
     align-items: center;
     justify-content: center;
+  }
+  #calendar-card-body {
+    padding: 0;
   }
   .strong {
     font-weight: bold;

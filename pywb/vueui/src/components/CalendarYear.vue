@@ -1,5 +1,5 @@
 <template>
-  <div class="full-view">
+  <div class="full-view border-top-0 border-left-0 border-right-0 border-bottom border-dark shadow">
     <h2>
       <i
         class="fas fa-arrow-left year-arrow"
@@ -161,10 +161,11 @@ export default {
   .full-view {
     position: fixed;
     z-index: 10;
-    height: 80vh;
-    overflow: scroll;
+    height: 70vh;
+    overflow-y: scroll;
     width: 100%;
     background-color: white;
+    padding-bottom: 1em;
   }
   .full-view .months {
     display: flex;
