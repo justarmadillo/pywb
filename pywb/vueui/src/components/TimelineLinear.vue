@@ -64,7 +64,8 @@ export default {
 .timeline-linear .list {
   max-height: 80vh;
   min-height: 50px;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .timeline-linear .title {
   border-bottom: 1px solid black;
