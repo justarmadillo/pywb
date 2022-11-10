@@ -159,13 +159,15 @@ export default {
 
 <style scoped>
   .full-view {
-    position: fixed;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
     z-index: 10;
-    height: 70vh;
     overflow-y: scroll;
     width: 100%;
     background-color: white;
     padding-bottom: 1em;
+    justify-content: center;
   }
   .full-view .months {
     display: flex;
