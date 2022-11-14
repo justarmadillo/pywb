@@ -35,7 +35,9 @@ export default {
           this.period.contains(this.currentSnapshot);
     },
     displayDate() {
-      return new Date(this.period.fullId).toLocaleDateString(PywbI18N.getLocale());
+      // replace '-' in date string with '/' so firefox and chrome will return same result
+      let dateStringNoSlashes = this.period.fullId.replace(/-/g,'/');
+      return new Date(dateStringNoSlashes).toLocaleDateString(PywbI18N.getLocale());
     }
   },
   methods: {
