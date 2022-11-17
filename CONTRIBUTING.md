@@ -18,7 +18,11 @@ When opening an issue or commenting on an open issue, please describe the proble
 
 Please open a new pull request with a description of the changes and a link to the related issue (if no issue yet exists, please create one first).
 
+Create a new branch with a short descriptive name including the issue number, based on the latest `main` branch.
+
 All changes should be submitted with test coverage for the change as well as updates to the project documentation if appropriate.
+
+Avoid making unnecessary changes such as reformatting code or otherwise touching parts of the codebase that are not directly relevant to the issue at hand.
 
 We do our best to review pull requests in a timely manner but as we are a small team with many projects we cannot guarantee a response or merging timeline. Webrecorder reserves the right to reject pull requests that do not fit the direction of the project or ethics of the Webrecorder project.
 
